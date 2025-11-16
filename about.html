@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="about.css">
+    <title>Anjelic Haircare || Home || Based in Houston, TX</title>
+</head>
+<body>
+
+
+
+<!-- ============================================ -->
+<!--                 Navigation                   -->
+<!-- ============================================ -->
+
+<header id="cs-navigation">
+    <div class="cs-container">
+        <!--Nav Logo-->
+        <!--Logo is turned white in the css with a filter on dark mode-->
+        <a href="" class="cs-logo" aria-label="back to home">
+            <!-- <img src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/day-care.svg" alt="logo" width="210" height="29" aria-hidden="true" decoding="async"> -->
+        </a>
+        <!--Navigation List-->
+        <nav class="cs-nav" role="navigation">
+            <!--Mobile Nav Toggle-->
+            <button class="cs-toggle" aria-label="mobile menu toggle">
+                <div class="cs-box" aria-hidden="true">
+                    <span class="cs-line cs-line1" aria-hidden="true"></span>
+                    <span class="cs-line cs-line2" aria-hidden="true"></span>
+                    <span class="cs-line cs-line3" aria-hidden="true"></span>
+                </div>
+            </button>
+            <!-- We need a wrapper div so we can set a fixed height on the cs-ul in case the nav list gets too long from too many dropdowns being opened and needs to have an overflow scroll. This wrapper acts as the background so it can go the full height of the screen and not cut off any overflowing nav items while the cs-ul stops short of the bottom of the screen, which keeps all nav items in view no matter how mnay there are-->
+            <div class="cs-ul-wrapper">
+                <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
+                    <li class="cs-li">
+                        <a href="" class="cs-li-link cs-active">
+                            Home
+                        </a>
+                    </li>
+                    <li class="cs-li">
+                        <a href="" class="cs-li-link">
+                            About
+                        </a>
+                    </li>
+                    <!--Copy and paste this cs-dropdown list item and replace any .cs-li with this cs-dropdown group to make a new dropdown and it will work-->
+                    <li class="cs-li cs-dropdown" tabindex="0">
+                        <span class="cs-li-link">
+                            Services
+                            <img class="cs-drop-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/down-gold.svg" alt="dropdown icon" width="15" height="15" decoding="async" aria-hidden="true">
+                        </span>
+                        <ul class="cs-drop-ul">
+                            <li class="cs-drop-li">
+                                <a href="" class="cs-li-link cs-drop-link">Registration</a>
+                            </li>
+                            <li class="cs-drop-li">
+                                <a href="" class="cs-li-link cs-drop-link">Our Classes</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="cs-li">
+                        <a href="" class="cs-li-link">
+                            Blog
+                        </a>
+                    </li>
+                    <li class="cs-li">
+                        <a href="" class="cs-li-link">
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="cs-contact-group">
+            <a href="tel:+84 1985 33 999" class="cs-phone">
+                <img class="cs-phone-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/phone-1a.svg" alt="logo" width="24" height="24" aria-hidden="true" decoding="async">
+                +84 1985 33 999
+            </a>
+            <div class="cs-social">
+                <a href="" class="cs-social-link">
+                    <img class="cs-social-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/facebook-1a.svg" alt="logo" width="12" height="12" aria-hidden="true" decoding="async">
+                </a>
+                <a href="" class="cs-social-link">
+                    <img class="cs-social-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/twitter-1a.svg" alt="logo" width="12" height="12" aria-hidden="true" decoding="async">
+                </a>
+                <a href="" class="cs-social-link">
+                    <img class="cs-social-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/ins,tagram1a.svg" alt="logo" width="12" height="12" aria-hidden="true" decoding="async">
+                </a>
+                <a href="" class="cs-social-link">
+                    <img class="cs-social-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/youtube1a.svg" alt="logo" width="12" height="12" aria-hidden="true" decoding="async">
+                </a>
+            </div>
+        </div>
+        <!--Dark Mode toggle, uncomment button code if you want to enable a dark mode toggle-->
+        <!-- <button id="dark-mode-toggle" aria-label="dark mode toggle">
+            <svg class="cs-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480" style="enable-background:new 0 0 480 480" xml:space="preserve"><path d="M459.782 347.328c-4.288-5.28-11.488-7.232-17.824-4.96-17.76 6.368-37.024 9.632-57.312 9.632-97.056 0-176-78.976-176-176 0-58.4 28.832-112.768 77.12-145.472 5.472-3.712 8.096-10.4 6.624-16.832S285.638 2.4 279.078 1.44C271.59.352 264.134 0 256.646 0c-132.352 0-240 107.648-240 240s107.648 240 240 240c84 0 160.416-42.688 204.352-114.176 3.552-5.792 3.04-13.184-1.216-18.496z"/></svg>
+            <img class="cs-sun" aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fsun.svg" decoding="async" alt="moon" width="15" height="15">
+        </button> -->
+    </div>
+</header>
+
+      
+
+
+<!----------------------------->
+<!----------CAROUSEL #1----------->
+<!----------------------------->
+<div class="carousel-container">
+  <div class="carousel-track">
+    <p class="carousel-item">MIGSFLOW</p><img src="./logo/computer-icon.svg" alt="" height="20px">
+    <p class="carousel-item">DESIGN MADE EASY</p><img src="./logo/computer-icon.svg" alt="" height="20px">
+    <p class="carousel-item">MIGSFLOW</p><img src="./logo/computer-icon.svg" alt="" height="20px">
+    <p class="carousel-item">MIGSFLOW</p><img src="./logo/computer-icon.svg" alt="" height="20px">
+    <p class="carousel-item">DESIGN MADE EASY</p><img src="./logo/computer-icon.svg" alt="" height="20px">
+    <p class="carousel-item">MIGSFLOW</p><img src="./logo/computer-icon.svg" alt="" height="20px">
+    <p class="carousel-item">MIGSFLOW</p><img src="./logo/computer-icon.svg" alt="" height="20px">
+    <p class="carousel-item">DESIGN MADE EASY</p><img src="./logo/computer-icon.svg" alt="" height="20px">
+    <p class="carousel-item">MIGSFLOW</p><img src="./logo/computer-icon.svg" alt="" height="20px">
+    <!-- Duplicate items for a seamless loop -->
+    <p class="carousel-item">DESIGN MADE EASY</p><img src="./logo/computer-icon.svg" alt="" height="20px">
+    <p class="carousel-item">MIGSFLOW</p><img src="./logo/computer-icon.svg" alt="" height="20px">
+    <p class="carousel-item">DESIGN MADE EASY</p><img src="./logo/computer-icon.svg" alt="" height="20px">
+    <p class="carousel-item">MIGSFLOW</p><img src="./logo/computer-icon.svg" alt="" height="20px">
+    <p class="carousel-item">DESIGN MADE EASY</p><img src="./logo/computer-icon.svg" alt="" height="20px">
+    <p class="carousel-item">MIGSFLOW</p><img src="./logo/computer-icon.svg" alt="" height="20px">
+    <p class="carousel-item">MIGSFLOW</p><img src="./logo/computer-icon.svg" alt="" height="20px">
+    <p class="carousel-item">DESIGN MADE EASY</p><img src="./logo/computer-icon.svg" alt="" height="20px">
+    <p class="carousel-item">MIGSFLOW</p><img src="./logo/computer-icon.svg" alt="" height="20px">
+  </div>
+</div>
+
+
+<!--------------------------------->
+<!----------HERO SECTION----------->
+<!--------------------------------->
+<section class="hero-section">
+    <div class="hero-content">
+        <h1>WELCOME TO ANJELIC HAIRCARE</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem, illo deserunt. Beatae unde voluptate ea fugiat omnis 
+            necessitatibus rem soluta laborum nobis! Explicabo quasi quam laboriosam unde sunt magni doloribus?</p>
+    </div>
+    <div class="btn-container">
+    <a class="btn-1" href="#">SHOP NOW</a></div>
+</section>
+
+
+
+<!----------------------------->
+<!----------CAROUSEL #2----------->
+<!----------------------------->
+<div class="carousel-container">
+  <div class="carousel-track">
+    <p class="carousel-item">MIGSFLOW</p><img src="./logo/computer-icon.svg" alt="" height="20px">
+    <p class="carousel-item">DESIGN MADE EASY</p><img src="./logo/computer-icon.svg" alt="" height="20px">
+    <p class="carousel-item">MIGSFLOW</p><img src="./logo/computer-icon.svg" alt="" height="20px">
+    <p class="carousel-item">MIGSFLOW</p><img src="./logo/computer-icon.svg" alt="" height="20px">
+    <p class="carousel-item">DESIGN MADE EASY</p><img src="./logo/computer-icon.svg" alt="" height="20px">
+    <p class="carousel-item">MIGSFLOW</p><img src="./logo/computer-icon.svg" alt="" height="20px">
+    <p class="carousel-item">MIGSFLOW</p><img src="./logo/computer-icon.svg" alt="" height="20px">
+    <p class="carousel-item">DESIGN MADE EASY</p><img src="./logo/computer-icon.svg" alt="" height="20px">
+    <p class="carousel-item">MIGSFLOW</p><img src="./logo/computer-icon.svg" alt="" height="20px">
+    <!-- Duplicate items for a seamless loop -->
+    <p class="carousel-item">DESIGN MADE EASY</p><img src="./logo/computer-icon.svg" alt="" height="20px">
+    <p class="carousel-item">MIGSFLOW</p><img src="./logo/computer-icon.svg" alt="" height="20px">
+    <p class="carousel-item">DESIGN MADE EASY</p><img src="./logo/computer-icon.svg" alt="" height="20px">
+    <p class="carousel-item">MIGSFLOW</p><img src="./logo/computer-icon.svg" alt="" height="20px">
+    <p class="carousel-item">DESIGN MADE EASY</p><img src="./logo/computer-icon.svg" alt="" height="20px">
+    <p class="carousel-item">MIGSFLOW</p><img src="./logo/computer-icon.svg" alt="" height="20px">
+    <p class="carousel-item">MIGSFLOW</p><img src="./logo/computer-icon.svg" alt="" height="20px">
+    <p class="carousel-item">DESIGN MADE EASY</p><img src="./logo/computer-icon.svg" alt="" height="20px">
+    <p class="carousel-item">MIGSFLOW</p><img src="./logo/computer-icon.svg" alt="" height="20px">
+  </div>
+</div>
+
+
+
+<!--------------------------------->
+<!----------ABOUT ME SECTION------->
+<!--------------------------------->
+<div class="about-section">
+    <div class="about-content">
+        <div class="about-titles">
+            <h1>HOW IT ALL <div class="font-2">STARTED</div></h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing
+                 elit. Beatae vero numquam iusto iure nesciunt 
+                 placeat mollitia. Doloremque, eum ullam. In quod
+                  unde praesentium vitae? Nesciunt rerum obcaecati 
+                  vero quidem ad!</p>
+        </div>
+        <div class="about-img"><img src="#" alt="image of product"></div>
+    </div>
+</div>
+
+
+<!----------------------------->
+<!----------CAROUSEL #1----------->
+<!----------------------------->
+<div class="carousel-container">
+  <div class="carousel-track">
+    <p class="carousel-item">MIGSFLOW</p><img src="./logo/computer-icon.svg" alt="" height="20px">
+    <p class="carousel-item">DESIGN MADE EASY</p><img src="./logo/computer-icon.svg" alt="" height="20px">
+    <p class="carousel-item">MIGSFLOW</p><img src="./logo/computer-icon.svg" alt="" height="20px">
+    <p class="carousel-item">MIGSFLOW</p><img src="./logo/computer-icon.svg" alt="" height="20px">
+    <p class="carousel-item">DESIGN MADE EASY</p><img src="./logo/computer-icon.svg" alt="" height="20px">
+    <p class="carousel-item">MIGSFLOW</p><img src="./logo/computer-icon.svg" alt="" height="20px">
+    <p class="carousel-item">MIGSFLOW</p><img src="./logo/computer-icon.svg" alt="" height="20px">
+    <p class="carousel-item">DESIGN MADE EASY</p><img src="./logo/computer-icon.svg" alt="" height="20px">
+    <p class="carousel-item">MIGSFLOW</p><img src="./logo/computer-icon.svg" alt="" height="20px">
+    <!-- Duplicate items for a seamless loop -->
+    <p class="carousel-item">DESIGN MADE EASY</p><img src="./logo/computer-icon.svg" alt="" height="20px">
+    <p class="carousel-item">MIGSFLOW</p><img src="./logo/computer-icon.svg" alt="" height="20px">
+    <p class="carousel-item">DESIGN MADE EASY</p><img src="./logo/computer-icon.svg" alt="" height="20px">
+    <p class="carousel-item">MIGSFLOW</p><img src="./logo/computer-icon.svg" alt="" height="20px">
+    <p class="carousel-item">DESIGN MADE EASY</p><img src="./logo/computer-icon.svg" alt="" height="20px">
+    <p class="carousel-item">MIGSFLOW</p><img src="./logo/computer-icon.svg" alt="" height="20px">
+    <p class="carousel-item">MIGSFLOW</p><img src="./logo/computer-icon.svg" alt="" height="20px">
+    <p class="carousel-item">DESIGN MADE EASY</p><img src="./logo/computer-icon.svg" alt="" height="20px">
+    <p class="carousel-item">MIGSFLOW</p><img src="./logo/computer-icon.svg" alt="" height="20px">
+  </div>
+</div>
+
+
+<!----------------------------->
+<!----------ABOUT ME 2----------->
+<!----------------------------->
+<div class="about-2-section">
+    <div class="about-2-content">
+        <div class="about-2-titles">
+            <h1>OFFICIALLY FOUNDED IN 2019</h1>
+            <P>By Asia Jackson, Anjelic Hair Care is an all-natural 
+                hair and skincare brand that strives to instill 
+                confidence within the natural hair community.</P>
+            <p>Ms. Jackson originally aspired to become an 
+                orthodontist until an accelerator program visited her
+                 high school during her junior year. She participated
+                  in the program, which equipped her with the tools 
+                  to launch a successful business. After identifying
+                   a problem and seeking a solution, she collaborated
+                    with a chemist to formulate products that promote
+             healthy hair growth.</p>
+        </div>
+        <div class="about-2-img"><img src="#" alt="image of locs"></div>
+    </div>
+    <div class="about-2-contnet-2">
+        <p>Her first creation was the Organic Flaxseed Gelee, a lightweight formula that nourishes the hair follicles, prevents breakage, and soothes the scalp, supporting styles such as wash-and-go’s, twist-outs, puffs, braid-outs, locs, and updos. At the end of the program, she presented her product and won $1,000 to officially launch Anjelic Hair Care.</p>
+        <p>By her second year of business, she had five products in production and decided to focus on one product, the Multipurpose Shea Butter, while balancing her college workload. She continues to grow her business by investing in new technologies, promoting on social media, and selling at multiple vendor events.</p>
+        <p>Thank you for being a part of another page in our story.</p>
+    </div>
+</div>
+
+
+
+
+<!----------------------------->
+<!----------CAROUSEL #1----------->
+<!----------------------------->
+<div class="carousel-container">
+  <div class="carousel-track">
+    <p class="carousel-item">MIGSFLOW</p><img src="./logo/computer-icon.svg" alt="" height="20px">
+    <p class="carousel-item">DESIGN MADE EASY</p><img src="./logo/computer-icon.svg" alt="" height="20px">
+    <p class="carousel-item">MIGSFLOW</p><img src="./logo/computer-icon.svg" alt="" height="20px">
+    <p class="carousel-item">MIGSFLOW</p><img src="./logo/computer-icon.svg" alt="" height="20px">
+    <p class="carousel-item">DESIGN MADE EASY</p><img src="./logo/computer-icon.svg" alt="" height="20px">
+    <p class="carousel-item">MIGSFLOW</p><img src="./logo/computer-icon.svg" alt="" height="20px">
+    <p class="carousel-item">MIGSFLOW</p><img src="./logo/computer-icon.svg" alt="" height="20px">
+    <p class="carousel-item">DESIGN MADE EASY</p><img src="./logo/computer-icon.svg" alt="" height="20px">
+    <p class="carousel-item">MIGSFLOW</p><img src="./logo/computer-icon.svg" alt="" height="20px">
+    <!-- Duplicate items for a seamless loop -->
+    <p class="carousel-item">DESIGN MADE EASY</p><img src="./logo/computer-icon.svg" alt="" height="20px">
+    <p class="carousel-item">MIGSFLOW</p><img src="./logo/computer-icon.svg" alt="" height="20px">
+    <p class="carousel-item">DESIGN MADE EASY</p><img src="./logo/computer-icon.svg" alt="" height="20px">
+    <p class="carousel-item">MIGSFLOW</p><img src="./logo/computer-icon.svg" alt="" height="20px">
+    <p class="carousel-item">DESIGN MADE EASY</p><img src="./logo/computer-icon.svg" alt="" height="20px">
+    <p class="carousel-item">MIGSFLOW</p><img src="./logo/computer-icon.svg" alt="" height="20px">
+    <p class="carousel-item">MIGSFLOW</p><img src="./logo/computer-icon.svg" alt="" height="20px">
+    <p class="carousel-item">DESIGN MADE EASY</p><img src="./logo/computer-icon.svg" alt="" height="20px">
+    <p class="carousel-item">MIGSFLOW</p><img src="./logo/computer-icon.svg" alt="" height="20px">
+  </div>
+</div>
+
+
+
+<section class="mission-section">
+    <div class="mission-content">
+        <div class="mission-titles">
+            <h1>OUR MISSION: BEAUTY WITH</h1>
+            <h3><span class="font-2">PURPOSE</span></h3>
+        </div>
+        <div class="mission-cards">
+
+            <!-- CARD #1 -->
+            <div class="mission-card1">
+                <div class="mission-card-img"><img src="#" alt="product img"></div>
+                <div class="mission-subcard-1">
+                    <div class="card-number"><h1>01</h1></div>
+                    <div class="card-content">
+                        <h3>EMPOWER NATURAL CONFIDENCE</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, molestias impedit. Et eos ducimus suscipit vitae illum excepturi illo laudantium, quis voluptatum quo delectus iste numquam iure obcaecati minus nihil.</p>
+                    </div>
+                </div>
+            </div>
+                        
+            <!-- CARD #2 -->
+            <div class="mission-card1">
+                <div class="mission-card-img"><img src="#" alt="product img"></div>
+                <div class="mission-subcard-1">
+                    <div class="card-number"><h1>02</h1></div>
+                    <div class="card-content">
+                        <h3>EMPOWER NATURAL CONFIDENCE</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, molestias impedit. Et eos ducimus suscipit vitae illum excepturi illo laudantium, quis voluptatum quo delectus iste numquam iure obcaecati minus nihil.</p>
+                    </div>
+                </div>
+            </div>
+                        
+            <!-- CARD #3-->
+            <div class="mission-card1">
+                <div class="mission-card-img"><img src="#" alt="product img"></div>
+                <div class="mission-subcard-1">
+                    <div class="card-number"><h1>03</h1></div>
+                    <div class="card-content">
+                        <h3>EMPOWER NATURAL CONFIDENCE</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, molestias impedit. Et eos ducimus suscipit vitae illum excepturi illo laudantium, quis voluptatum quo delectus iste numquam iure obcaecati minus nihil.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+<!----------------------------->
+<!---------- CTA #2----------->
+<!----------------------------->
+<section class="cta-2-section">
+    <div class="cta-2-content">
+        <div class="cta-2-header"><h1>NOURISH EVERY <br>PART OF YOU<h1></div>
+            <div class="carousel-container">
+                <div class="carousel-track">
+                    <p class="carousel-item">MIGSFLOW</p><img src="./logo/computer-icon.svg" alt="" height="20px">
+                    <p class="carousel-item">DESIGN MADE EASY</p><img src="./logo/computer-icon.svg" alt="" height="20px">
+                    <p class="carousel-item">MIGSFLOW</p><img src="./logo/computer-icon.svg" alt="" height="20px">
+                    <p class="carousel-item">MIGSFLOW</p><img src="./logo/computer-icon.svg" alt="" height="20px">
+                    <p class="carousel-item">DESIGN MADE EASY</p><img src="./logo/computer-icon.svg" alt="" height="20px">
+                    <p class="carousel-item">MIGSFLOW</p><img src="./logo/computer-icon.svg" alt="" height="20px">
+                    <p class="carousel-item">MIGSFLOW</p><img src="./logo/computer-icon.svg" alt="" height="20px">
+                    <p class="carousel-item">DESIGN MADE EASY</p><img src="./logo/computer-icon.svg" alt="" height="20px">
+                    <p class="carousel-item">MIGSFLOW</p><img src="./logo/computer-icon.svg" alt="" height="20px">
+                    <!-- Duplicate items for a seamless loop -->
+                    <p class="carousel-item">DESIGN MADE EASY</p><img src="./logo/computer-icon.svg" alt="" height="20px">
+                    <p class="carousel-item">MIGSFLOW</p><img src="./logo/computer-icon.svg" alt="" height="20px">
+                    <p class="carousel-item">DESIGN MADE EASY</p><img src="./logo/computer-icon.svg" alt="" height="20px">
+                    <p class="carousel-item">MIGSFLOW</p><img src="./logo/computer-icon.svg" alt="" height="20px">
+                    <p class="carousel-item">DESIGN MADE EASY</p><img src="./logo/computer-icon.svg" alt="" height="20px">
+                    <p class="carousel-item">MIGSFLOW</p><img src="./logo/computer-icon.svg" alt="" height="20px">
+                    <p class="carousel-item">MIGSFLOW</p><img src="./logo/computer-icon.svg" alt="" height="20px">
+                    <p class="carousel-item">DESIGN MADE EASY</p><img src="./logo/computer-icon.svg" alt="" height="20px">
+                    <p class="carousel-item">MIGSFLOW</p><img src="./logo/computer-icon.svg" alt="" height="20px">
+                </div>
+            </div>
+        <div class="cta-2-paragraph">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium ipsa quas ab iste. <br> Officiis, fugit sint inventore animi dolor, nisi corrupti asperiores exercitationem odit sed maxime, sunt dolorem doloribus voluptatem?</p>
+        </div>
+        <div class="btn-3"><a class="btn3" href="#">SHOP NOW</a></div>
+    </div>
+</section>
+
+<hr>
+
+<!----------------------------->
+<!---------- FOOTER----------->
+<!----------------------------->
+<footer>
+    <div class="footer-content">
+        <div class="footer-box">
+            <div class="footer-logo"><img src="#" alt="logo"></div>
+        </div>
+        <div class="quick-links-box">
+            <ul>
+                <li><a href="#"></a>Home</li>
+                <li><a href="#"></a>About</li>
+                <li><a href="#"></a>Products</li>
+                <li><a href="#"></a>Contact</li>
+            </ul>
+        </div>
+        <div class="quick-links-box">
+            <ul>
+                <li>(832) 123-4567</li>
+                <li>Anjelichair@gmail.com</li>
+                <li>Based in Houston, TX</li>
+                
+            </ul>
+        </div>
+    </div>
+    <hr>
+    <div class="copyright"><p>© Copyright 2025 Anjelic Hair Care</p><div>
+</footer>
+
+
+<!-- JS FILE -->
+<script src="main.js"></script> 
+
+</body>
+</html>

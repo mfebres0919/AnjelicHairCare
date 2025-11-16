@@ -775,105 +775,75 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-/* =====================================
-===============CTA #1============= */
-.cta-content {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  margin-top: 2rem;
-  padding: 2rem;
-}
+
+
 
 
 /* =====================================
-===============SHOP SECTION============= */
+===============ABOUT 1 ============= */
 
-.shop-section {
-  display: flex;
-  flex-direction: column;
+.about-content {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    align-items: center;
+    text-align: center;
 }
 
-.card-1 {
-  background: rgb(150, 150, 251);
-  border: 1px solid black;
+.about-titles h1,p {
+    padding-bottom: 2rem;
 }
 
 
-.card-1-content {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 1.4rem;
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-  
+
+/* =====================================
+===============ABOUT 2============= */
+
+.about-2-section {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
 }
 
-.btn-2{
-  text-decoration: none;
-  background: black;
-  max-width: 600px;
-  margin-top: 2rem;
-  padding: 10px;
-  border: 1px solid white;
-  color: white;
+.about-2-img img{
+    padding-bottom: 2rem;
 }
 
 
 /* =====================================
-===============ABOUT SECTION============= */
-
-.about1-section {
-  padding: 2rem;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
+===============MISSION SECTION============= */
+.mission-content {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
 }
 
-.about1-content p {
-  padding-bottom: 2rem;
+.mission-titles {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }
 
-.about1-content h1 {
-  padding-bottom: 2rem;
+.mission-card1 {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    margin-top: 2rem;
+    padding: 1rem;
+    border-radius: 20px;
 }
 
-
-/* =====================================
-===============WHY US SECTION============= */
-
-.why-us-section {
-  display: flex;
-  flex-direction: column;
-  padding: 2rem;
+.mission-card-img, .mission-subcard-1 {
+    border: 1px solid black;
+    border-radius: 20px;
 }
 
-.why-us-content {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 2rem;
-}
-
-.why-us-titles {
-  margin-bottom: 2rem;
+.mission-subcard-1 {
+    margin: 20px 20px 20px 20px;
+    padding: 1rem;
 }
 
 
-/* =====================================
-===============TESTIMONIALS============= */
-
-.testimonials-content {
-  display: flex;
-  flex-direction: column;
-  padding: 2rem;
-}
-
-.testimonial-card {
-  display: flex;
-  flex-direction: column;
-  margin-top: 2rem;
-}
 
 
 
