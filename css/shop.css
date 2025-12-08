@@ -4,7 +4,7 @@ body {
 }
 
 p {
-  line-height: 2rem;
+  /* line-height: 2rem; */
   margin: 0;
 }
 
@@ -12,111 +12,6 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 2rem;
   margin: 0;
 }
-
-
-
-
-/* ========= PRELOADER (NEW VERSION) ========= */
-
-.preloader {
-  position: fixed;
-  inset: 0;
-  width: 100%;
-  height: 100vh;
-  background: #000000;
-  z-index: 9999;
-  overflow: hidden;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  /* This allows slide animation */
-  transform: translateX(0);
-}
-
-/* Text behind bars */
-.preloader-name {
-  position: absolute;
-  text-align: center;
-  z-index: 2;
-}
-
-.preloader-name span {
-  display: block;
-  font-family: "Times New Roman", serif;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  font-size: 1.8rem;
-  color: #fff;
-}
-
-.preloader-name .accent {
-  font-size: 2.2rem;
-  font-weight: 700;
-  color: #f2517a;
-}
-
-/* Bars layered on top */
-.preloader-bars {
-  position: absolute;
-  inset: 0;
-  display: flex;
-  z-index: 5;
-}
-
-/* Each bar container */
-.preloader .bar {
-  flex: 1;
-  position: relative;
-  overflow: hidden;
-}
-
-/* Bars fill left → right (unchanged) */
-.preloader .inner-bar {
-  position: absolute;
-  inset: 0;
-  width: 0%;
-  background: linear-gradient(to bottom, #f2f251, #ffea00);
-  
-  animation: fillBar 1.5s forwards;
-  animation-delay: calc(var(--i) * 0.2s);
-}
-
-@keyframes fillBar {
-  0% { width: 0%; }
-  100% { width: 100%; }
-}
-
-/* ========= EXIT ANIMATION (SLIDE RIGHT) ========= */
-
-.preloader.exit {
-  animation: slideRight 0.8s ease forwards;
-}
-
-@keyframes slideRight {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(100%); }
-}
-
-/* Fade after preloader is off screen */
-.preloader.done {
-  opacity: 0;
-  transition: opacity 0.3s ease-out;
-  pointer-events: none;
-}
-
-/* ========= MOBILE FONT SIZE ========= */
-@media (max-width: 767px) {
-  .preloader-name span {
-    font-size: 1.4rem;
-  }
-  .preloader-name .accent {
-    font-size: 1.7rem;
-  }
-}
-
-
 
 
 /*-- -------------------------- -->
@@ -845,43 +740,19 @@ h1, h2, h3, h4, h5, h6 {
 ===============HERO SECTION============= */
 
 .hero-section {
-    position: relative;
-    background-image: url(./images/background/home-hero-bg.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    color: white;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-
-    padding: 2rem 1rem;
-    padding-top: 4rem;
-
-    height: 60vh;
-    max-width: 800px;
-    margin: 0 auto;
-    line-height: 2rem;
-    z-index: 1;
+  background: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+  padding-top: 4rem;
+  height: 60vh;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 2rem;
 }
-
-/* BLACK OVERLAY */
-.hero-section::before {
-    content: "";
-    position: absolute;
-    inset: 0; /* covers entire hero */
-    background: rgba(0, 0, 0, 0.5); /* adjust opacity */
-    z-index: 0; /* behind text */
-}
-
-/* ENSURE TEXT STAYS ABOVE OVERLAY */
-.hero-section > * {
-    position: relative;
-    z-index: 2;
-}
-
 
 .hero-content h1 {
   margin: 0;
@@ -897,291 +768,85 @@ h1, h2, h3, h4, h5, h6 {
   display: block;        /* ← makes width apply */
   width: 120px;          /* ← sets actual width */
   margin: 0 auto;
-  border: 1px solid white;
-  border-radius: 5px;
   text-decoration: none;
-  background: rgb(0, 0, 0);
+  background: yellow;
   padding: 10px;
-  color: rgb(255, 255, 255);
+  color: black;
 }
 
 
-/* =====================================
-===============CTA #1============= */
 
-.cta-section {
-  background-color: #2e2624;
-}
+/* ============================
+=====SHOPPING SECTION ========= */
 
-
-.cta-content {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  padding: 2rem;
-  color: white;
-}
-
-
-/* =====================================
-===============SHOP SECTION============= */
 
 .shop-section {
-  display: flex;
-  flex-direction: column;
-}
-
-.card-1 {
-    position: relative;
-    background-image: url('./images/background/shea-butter-cta1.png'); /* update path */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-
-    color: white; /* Text color */
+    display: flex;
+    flex-direction: column;
     padding: 2rem;
-    overflow: hidden; /* ensures overlay stays inside */
-    z-index: 1;
 }
 
-/* BLACK OVERLAY */
-.card-1::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: rgba(0,0,0,0.5); /* adjust opacity */
-    z-index: 0; /* behind the text */
+.shop-content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }
 
-/* Make sure all content stays above overlay */
-.card-1 > * {
-    position: relative;
-    z-index: 2;
+.shop-content h1 {
+    margin: 0;
+    padding-bottom: 2rem;
 }
 
-
-
-.card-1-content {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 1rem;
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-  
+.shop-container {
+    /* border: 2px solid red; */
+    margin: 2rem 0rem 2rem 0rem
 }
 
-.card-1-content h1 {
-  padding-bottom: 1rem;
-  line-height: 2rem;
+.shop-card {
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 6px;
+    padding: 2rem;
+    margin: 2rem 0rem 3rem 0rem
 }
 
-
-.arrow1 {
-  padding-top: 1rem;
-  padding-left: 1rem;
+.btn-2 {
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    padding: 1.2rem;
+    margin-top: 1rem;
+    background: yellow;
+    border: 1px solid black;
 }
 
-.btn-2{
-  text-decoration: none;
-  background: black;
-  max-width: 600px;
-  margin-top: 2rem;
-  padding: 10px;
-  border: 1px solid white;
-  color: white;
-}
 
 
 /* =====================================
-===============ABOUT SECTION============= */
+===============FOOTER============= */
 
-.about1-section {
-  padding: 2rem;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-}
-
-.about1-content p {
-  padding-bottom: 2rem;
-}
-
-.about1-content h1 {
-  padding-bottom: 2rem;
-}
-
-
-/* =====================================
-===============WHY US SECTION============= */
-
-.why-us-section {
-  display: flex;
-  flex-direction: column;
-  padding: 2rem;
-}
-
-.why-us-content {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 2rem;
-}
-
-.why-us-titles {
-  margin-bottom: 2rem;
-}
-
-.why-us-img {
+.footer-content {
   display: flex;
   justify-content: center;
-  margin-bottom: 2rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
-.reason-1 {
+.quick-links-box ul {
+  margin: 0;
+}
+
+.quick-links-box ul li {
+  list-style: none;
+  line-height: 1.6rem;
+}
+
+.copyright {
   display: flex;
-}
-
-.reason-1 h1 {
-  color:#8b6500;
-}
-
-.reason-1 p {
-  padding-left: 1rem;
-}
-
-/* =====================================
-===============TESTIMONIALS============= */
-/* ========================= */
-/* TESTIMONIALS SECTION SETUP */
-/* ========================= */
-
-.testimonials-section {
-  background: #000;
-  color: #fff;
-  padding: 3rem 1rem;
-  overflow: hidden;
-}
-
-.testimonials-header h1 {
-  text-align: center;
-  font-size: 2rem;
-  margin-bottom: 2rem;
-  letter-spacing: 1px;
-}
-
-/* Row wrapper (hides overflow) */
-.carousel-row {
-  overflow: hidden;
-  margin-bottom: 2rem;
-}
-
-/* ========================= */
-/* NEW REVIEW TRACK (FIXED) */
-/* ========================= */
-
-/* Universal track settings */
-.review-track {
-  display: flex;
-  gap: 1.5rem;
-  flex-wrap: nowrap;        /* prevents wrapping */
-  width: max-content;       /* ensures full width for smooth loop */
-  will-change: transform;   /* makes animation smoother */
-}
-
-/* TOP ROW TRACK */
-.row-top .review-track {
-  display: flex;
-  gap: 1.5rem;
-  flex-wrap: nowrap;
-  width: max-content;
-  will-change: transform;
-  animation: loop-left-top 12s linear infinite;
-}
-
-/* FORCE CONSISTENT CARD WIDTHS */
-.row-top .testimonial-card {
-  min-width: 260px;
-  max-width: 260px;
-  flex: 0 0 260px;
-}
-
-/* TOP ROW'S SMOOTH LOOP KEYFRAME (unique!) */
-@keyframes loop-left-top {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-50.15%); } /* Micro-fix */
-}
-/* BOTTOM ROW TRACK */
-.row-bottom .review-track {
-  display: flex;
-  gap: 1.5rem;
-  flex-wrap: nowrap;
-  width: max-content;
-  will-change: transform;
-  animation: loop-right 14s linear infinite;
-}
-
-@keyframes loop-right {
-  0% { transform: translateX(-50%); }
-  100% { transform: translateX(0); }
+  justify-content: center;
 }
 
 
-/* ========================= */
-/* CARD STYLE (IMPORTANT!)   */
-/* ========================= */
 
-.testimonial-card {
-  min-width: 260px;
-  max-width: 260px; /* keeps widths identical for seamless looping */
-  background: #111;
-  border-radius: 1.25rem;
-  padding: 1.5rem;
-  border: 1px solid #222;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
-  color: white;
-  font-size: 0.95rem;
-}
-
-.stars {
-  color: #f8c44f;
-  margin: 0.3rem 0 0.8rem;
-}
-
-.author {
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
-  margin-top: 1.2rem;
-}
-
-.author img {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  object-fit: cover;
-}
-
-.author strong {
-  display: block;
-  font-size: 0.95rem;
-}
-
-.author span {
-  display: block;
-  font-size: 0.8rem;
-  opacity: 0.75;
-}
-
-/* ========================= */
-/* RESPONSIVE                */
-/* ========================= */
-
-@media (max-width: 768px) {
-  .testimonial-card {
-    min-width: 240px;
-    max-width: 240px;
-  }
-}
 
 
 /* =====================================
@@ -1222,6 +887,7 @@ h1, h2, h3, h4, h5, h6 {
   color: rgb(0, 0, 0);
 
 }
+
 
 
 /* =====================================

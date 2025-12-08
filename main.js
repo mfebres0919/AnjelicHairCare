@@ -1,3 +1,28 @@
+window.addEventListener('load', function () {
+  const preloader = document.getElementById('preloader');
+
+  // ENTER duration — same as before
+  const enterDuration = 1500 + (7 * 150); 
+
+  setTimeout(() => {
+    preloader.classList.add('exit');
+
+    // After slideRight animation is done
+    setTimeout(() => {
+      preloader.classList.add('done');
+
+      setTimeout(() => {
+        preloader.remove();
+      }, 300);
+      
+    }, 800); // match slideRight duration
+
+  }, enterDuration);
+});
+
+
+
+
 // add classes for mobile navigation toggling
     var CSbody = document.querySelector("body");
     const CSnavbarMenu = document.querySelector("#cs-navigation");
