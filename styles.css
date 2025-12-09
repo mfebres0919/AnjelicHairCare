@@ -1157,12 +1157,12 @@ h1 {
 .testimonial-card {
   min-width: 260px;
   max-width: 260px; /* keeps widths identical for seamless looping */
-  background:  #000000;
+  background:  #ffffff;
   border-radius: 1.25rem;
   padding: 1.5rem;
   border: 1px solid #222;
   box-shadow: 30 0px 30px rgba(0,0,0,0.4);
-  color: white;
+  color: rgb(0, 0, 0);
   font-size: 0.95rem;
 }
 
