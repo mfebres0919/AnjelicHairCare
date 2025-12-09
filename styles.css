@@ -865,7 +865,7 @@ h1 {
     padding: 2rem 1rem;
     padding-top: 4rem;
 
-    height: 60vh;
+    height: 100vh;
     max-width: 800px;
     margin: 0 auto;
     line-height: 2rem;
@@ -877,7 +877,7 @@ h1 {
     content: "";
     position: absolute;
     inset: 0; /* covers entire hero */
-    background: rgba(0, 0, 0, 0.5); /* adjust opacity */
+    background: rgba(0, 0, 0, 0.65); /* adjust opacity */
     z-index: 0; /* behind text */
 }
 
@@ -888,12 +888,29 @@ h1 {
 }
 
 
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 12rem;
+  /* border: 2px solid red; */
+}
+
 .hero-content h1 {
   font-family: "Anton", sans-serif;
   font-weight: 400;
   font-style: normal;
+  line-height: 3rem;
   margin: 0;
   font-size: 2rem;
+  color: #f8d34b; /* glowing yellow text */
+
+  /* GLOW EFFECT */
+  text-shadow: 
+    0 0 8px rgba(248, 211, 75, 0.8),   /* soft glow */
+    0 0 20px rgba(248, 211, 75, 0.6),  /* bigger outer glow */
+    0 0 35px rgba(248, 211, 75, 0.4);  /* extra depth */
 }
 
 .hero-content p {
@@ -912,6 +929,7 @@ h1 {
   padding: 15px;
   color: rgb(255, 255, 255);
 }
+
 
 
 /* =====================================
@@ -989,10 +1007,7 @@ h1 {
 }
 
 
-.arrow1 {
-  padding-top: 1rem;
-  padding-left: 1rem;
-}
+
 
 .btn-2{
   text-decoration: none;
