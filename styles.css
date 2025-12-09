@@ -6,14 +6,28 @@ body {
 p {
   line-height: 2rem;
   margin: 0;
+  font-family: poppins, sans-serif;
+  font-weight: normal;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  line-height: 2rem;
+  line-height: 2.5rem;
+  letter-spacing: 5px;
   margin: 0;
 }
 
+h1 {
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
 
+.btn-1, .btn-2, .btn-3 {
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 3px;
+}
 
 
 /* ========= PRELOADER (NEW VERSION) ========= */
@@ -54,7 +68,7 @@ h1, h2, h3, h4, h5, h6 {
 .preloader-name .accent {
   font-size: 2.2rem;
   font-weight: 700;
-  color: #f2517a;
+  color: #ffffff;
 }
 
 /* Bars layered on top */
@@ -810,9 +824,11 @@ h1, h2, h3, h4, h5, h6 {
   color: white;
 }
 
-.carousel-item p {
-    font-family: "Anton", sans-serif;
-
+.carousel-item {
+  font-family: "Anton", sans-serif !important;
+  font-weight: 100;
+  font-style: normal;
+  letter-spacing: 2px;
 }
 
 
@@ -831,10 +847,89 @@ h1, h2, h3, h4, h5, h6 {
 ===============CAROUSEL #2============= */
 
 
+.carousel-container2 {
+  width: 100%; /* Adjust as needed */
+  overflow: hidden; /* Hides content outside the container */
+  white-space: nowrap; /* Prevents text from wrapping */
+}
+
+.carousel-track2 {
+  display: inline-block; /* Allows items to sit side-by-side */
+  animation: slide 15s linear infinite; /* Adjust duration and timing */
+  background-color: rgb(255, 255, 255);
+  border: 1px solid black;
+  padding: 1.5rem;
+
+}
+
+.carousel-item2 {
+  display: inline-block; /* Aligns text items horizontally */
+  padding: 0 20px; /* Spacing between text items */
+  font-size: 1.2em;
+  color: rgb(0, 0, 0);
+}
+
+.carousel-item2 p {
+    font-family: "Anton", sans-serif !important;
+}
+
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%); /* Moves the track to the left by 50% of its width */
+  }
+}
 
 
 
 
+/* =====================================
+===============CAROUSEL #3============= */
+
+
+.carousel-container3 {
+  width: 100%; /* Adjust as needed */
+  overflow: hidden; /* Hides content outside the container */
+  white-space: nowrap; /* Prevents text from wrapping */
+}
+
+.carousel-track3 {
+  display: inline-block; /* Allows items to sit side-by-side */
+  animation: slide 15s linear infinite; /* Adjust duration and timing */
+  background-color: rgb(255, 255, 255);
+  border: 1px solid black;
+  padding: 1.5rem;
+
+}
+
+
+.carousel-img {
+  padding-left: 2rem;
+}
+
+.carousel-item3 {
+  display: inline-block; /* Aligns text items horizontally */
+  padding: 0 20px; /* Spacing between text items */
+  font-size: 1.2em;
+  color: rgb(0, 0, 0);
+}
+
+.carousel-item3 p {
+    font-family: "Anton", sans-serif !important;
+}
+
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%); /* Moves the track to the left by 50% of its width */
+  }
+}
 
 
 
@@ -884,6 +979,9 @@ h1, h2, h3, h4, h5, h6 {
 
 
 .hero-content h1 {
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+  font-style: normal;
   margin: 0;
   font-size: 2rem;
 }
@@ -901,7 +999,7 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 5px;
   text-decoration: none;
   background: rgb(0, 0, 0);
-  padding: 10px;
+  padding: 15px;
   color: rgb(255, 255, 255);
 }
 
@@ -920,6 +1018,12 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
   padding: 2rem;
   color: white;
+}
+
+.cta-content h1 {
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 
@@ -965,7 +1069,6 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 1rem;
   padding-top: 3rem;
   padding-bottom: 3rem;
   
@@ -973,7 +1076,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .card-1-content h1 {
   padding-bottom: 1rem;
-  line-height: 2rem;
 }
 
 
@@ -985,9 +1087,8 @@ h1, h2, h3, h4, h5, h6 {
 .btn-2{
   text-decoration: none;
   background: black;
-  max-width: 600px;
   margin-top: 2rem;
-  padding: 10px;
+  padding: em .5rem .5rem 1.5rem;
   border: 1px solid white;
   color: white;
 }
@@ -1051,13 +1152,10 @@ h1, h2, h3, h4, h5, h6 {
 
 /* =====================================
 ===============TESTIMONIALS============= */
-/* ========================= */
-/* TESTIMONIALS SECTION SETUP */
-/* ========================= */
 
 .testimonials-section {
-  background: #000;
-  color: #fff;
+  background: #ffffff;
+  color: #000000;
   padding: 3rem 1rem;
   overflow: hidden;
 }
@@ -1133,7 +1231,7 @@ h1, h2, h3, h4, h5, h6 {
 .testimonial-card {
   min-width: 260px;
   max-width: 260px; /* keeps widths identical for seamless looping */
-  background: #111;
+  background: #291800;
   border-radius: 1.25rem;
   padding: 1.5rem;
   border: 1px solid #222;
@@ -1199,20 +1297,30 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .cta-2-header {
-  padding-bottom: 2rem;
+  background-color:#2e2624;
+  padding: 2rem;
+  color: white;
 }
 
 .cta-2-paragraph {
+  background-color: #2e2624;
   padding: 2rem;
+  color: white;
+}
+
+
+.cta-2-paragraph p{
+  padding-bottom: 2rem;
 }
 
 .btn-3{
   display: block;        /* ← makes width apply */
   width: 120px;          /* ← sets actual width */
   margin: 0 auto;
-  background: yellow;
+  background:#f3b819 ;
   padding: 10px;
   border: 2px solid black;
+  border-radius: 5px;
   color: rgb(0, 0, 0);
 }
 
@@ -1230,12 +1338,13 @@ h1, h2, h3, h4, h5, h6 {
 .footer-content {
   display: flex;
   justify-content: center;
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+  padding: 2rem 0rem 2rem 0rem;
+
 }
 
 .quick-links-box ul {
   margin: 0;
+  padding: 1rem;
 }
 
 .quick-links-box ul li {
@@ -1246,4 +1355,5 @@ h1, h2, h3, h4, h5, h6 {
 .copyright {
   display: flex;
   justify-content: center;
+  padding: 2rem 0rem 2rem 0rem;
 }
