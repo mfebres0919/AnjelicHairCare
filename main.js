@@ -1,25 +1,28 @@
 window.addEventListener('load', function () {
   const preloader = document.getElementById('preloader');
 
-  // ENTER duration — same as before
-  const enterDuration = 1500 + (7 * 150); 
+  // ENTER duration
+  const enterDuration = 1500 + (7 * 150);
 
   setTimeout(() => {
+    // EXIT animation (right → left)
     preloader.classList.add('exit');
 
-    // After slideRight animation is done
+    // EXIT duration
+    const exitDuration = 1000 + (7 * 120);
+
     setTimeout(() => {
       preloader.classList.add('done');
 
+      // Remove preloader from DOM
       setTimeout(() => {
         preloader.remove();
-      }, 300);
-      
-    }, 800); // match slideRight duration
+      }, 500);
+
+    }, exitDuration);
 
   }, enterDuration);
 });
-
 
 
 

@@ -11,7 +11,9 @@ p {
   font-weight: normal;
 }
 
-li 
+a {
+  font-family: poppins, sans-serif;
+}
 
 h1, h2, h3, h4, h5, h6 {
   line-height: 2.5rem;
@@ -22,7 +24,7 @@ h1 {
   font-family: "Anton", sans-serif;
   font-weight: 400;
   font-style: normal;
-  letter-spacing: 5px;
+  letter-spacing: 2px;
 
 }
 
@@ -32,7 +34,6 @@ h1 {
   font-style: normal;
   letter-spacing: 3px;
 }
-
 
 /* ========= PRELOADER (NEW VERSION) ========= */
 
@@ -136,7 +137,6 @@ h1 {
 
 
 
-
 /*-- -------------------------- -->
 <---     Mobile Navigation      -->
 <--- -------------------------- -*/
@@ -236,7 +236,7 @@ h1 {
     width: 3.5rem;
     height: 3.5rem;
     margin: 0 0 0 auto;
-    background-color: #1a1a1a;
+    background-color: #ffffff;
     border: none;
     border-radius: 0.25rem;
     display: flex;
@@ -304,7 +304,7 @@ h1 {
   #cs-navigation .cs-line {
     width: 100%;
     height: 2px;
-    background-color: #fafbfc;
+    background-color: #000000;
     border-radius: 2px;
     position: absolute;
     left: 50%;
@@ -724,6 +724,7 @@ h1 {
   animation: slide 15s linear infinite; /* Adjust duration and timing */
   background-color: black;
   padding: 1.5rem;
+  /* border: 1px solid rgb(255, 247, 25); */
 
 }
 
@@ -794,8 +795,6 @@ h1 {
 }
 
 
-
-
 /* =====================================
 ===============CAROUSEL #3============= */
 
@@ -851,7 +850,7 @@ h1 {
 
 .hero-section {
     position: relative;
-    background-image: url(./images/background/home-hero-bg.png);
+    background-image: url(images/background/home-hero-bg\ \(1\).png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -865,7 +864,7 @@ h1 {
     padding: 2rem 1rem;
     padding-top: 4rem;
 
-    height: 100vh;
+    height: 80vh;
     max-width: 800px;
     margin: 0 auto;
     line-height: 2rem;
@@ -893,7 +892,7 @@ h1 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 12rem;
+  margin-top: 10rem;
   /* border: 2px solid red; */
 }
 
@@ -903,14 +902,14 @@ h1 {
   font-style: normal;
   line-height: 3rem;
   margin: 0;
-  font-size: 2rem;
-  color: #f8d34b; /* glowing yellow text */
+  font-size: 3rem;
+  color: #f9f9f9; /* glowing yellow text */
 
   /* GLOW EFFECT */
   text-shadow: 
-    0 0 8px rgba(248, 211, 75, 0.8),   /* soft glow */
-    0 0 20px rgba(248, 211, 75, 0.6),  /* bigger outer glow */
-    0 0 35px rgba(248, 211, 75, 0.4);  /* extra depth */
+    0 0 8px rgba(250, 250, 250, 0.8),   /* soft glow */
+    0 0 20px rgba(255, 255, 255, 0.6),  /* bigger outer glow */
+    0 0 35px rgba(255, 255, 255, 0.4);  /* extra depth */
 }
 
 .hero-content p {
@@ -1211,10 +1210,6 @@ h1 {
 /* =====================================
 ===============CTA #2============= */
 
-.cta-2-section {
-  margin-bottom: 2rem;
-}
-
 .cta-2-content {
   display: flex;
   flex-direction: column;
@@ -1260,6 +1255,12 @@ h1 {
 
 /* =====================================
 ===============FOOTER============= */
+
+footer {
+  /* border: 2px solid red; */
+  background-color: #fff8e6;
+}
+
 
 .footer-content {
   display: flex;
