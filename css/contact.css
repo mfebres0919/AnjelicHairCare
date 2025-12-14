@@ -718,7 +718,7 @@ h1 {
 
 .carousel-track {
   display: inline-block; /* Allows items to sit side-by-side */
-  animation: slide 15s linear infinite; /* Adjust duration and timing */
+  animation: slide 25s linear infinite; /* Adjust duration and timing */
   background-color: black;
   padding: 1.5rem;
   /* border: 1px solid rgb(255, 247, 25); */
@@ -763,7 +763,7 @@ h1 {
 
 .carousel-track2 {
   display: inline-block; /* Allows items to sit side-by-side */
-  animation: slide 15s linear infinite; /* Adjust duration and timing */
+  animation: slide 25s linear infinite; /* Adjust duration and timing */
   background-color: rgb(255, 255, 255);
   border: 1px solid black;
   padding: 1.5rem;
@@ -804,7 +804,7 @@ h1 {
 
 .carousel-track3 {
   display: inline-block; /* Allows items to sit side-by-side */
-  animation: slide 15s linear infinite; /* Adjust duration and timing */
+  animation: slide 25s linear infinite; /* Adjust duration and timing */
   background-color: rgb(255, 255, 255);
   border: 1px solid black;
   padding: 1.5rem;
