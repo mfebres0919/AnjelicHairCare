@@ -58,7 +58,7 @@ h1 {
 .preloader-name {
   position: absolute;
   text-align: center;
-  z-index: index 10;;
+  z-index: 5;
 }
 
 .preloader-name span {
@@ -66,14 +66,7 @@ h1 {
   font-family: "Anton", sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  font-size: 1.8rem;
   color: #fff;
-}
-
-.preloader-name .accent {
-  font-size: 2.2rem;
-  font-weight: 700;
-  color: #ffffff;
 }
 
 /* Bars layered on top */
@@ -840,17 +833,20 @@ h1 {
 
 
 
+
+
+
 /* =====================================
 ===============HERO SECTION============= */
 
 .hero-section {
     position: relative;
-    background-image: url(../images/background/shop-hero-bg.png);
+    /* background-image: url(images/background/home-hero-bg\ \(1\).png); */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     color: white;
-
+    background-color: black;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -859,7 +855,7 @@ h1 {
     padding: 2rem 1rem;
     padding-top: 4rem;
 
-    height: 80vh;
+    height: 40vh;
     max-width: 800px;
     margin: 0 auto;
     line-height: 2rem;
@@ -887,7 +883,7 @@ h1 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 10rem;
+  margin-top: 0rem;
   /* border: 2px solid red; */
 }
 
@@ -926,161 +922,94 @@ h1 {
 
 
 
-/* =====================================
-===============CTA #1============= */
-
-.cta-section {
-  background-color: #2e2624;
-}
-
-
-.cta-content {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  padding: 2rem;
-  color: white;
-}
-
-.cta-content h1 {
-  font-family: "Anton", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
 /* =========================
-   SHOP SECTION
+        FAQ SECTION
 ========================= */
 
-.shop-section {
-  padding: 3rem 1.5rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.faq-section {
+  background-color: #f6f1e7; /* cream */
+  padding: 4rem 1.5rem;
 }
 
-.shop-content {
-  text-align: center;
-  margin-bottom: 2.5rem;
-}
-
-.shop-content h1 {
-  font-family: "Anton", sans-serif;
-  letter-spacing: 3px;
-  font-size: 2.3rem;
-  margin-bottom: 0.5rem;
-}
-
-.shop-content p {
-  max-width: 500px;
+.faq-container {
+  max-width: 800px;
   margin: 0 auto;
 }
 
-/* =========================
-   CARD LAYOUT
-========================= */
-
-.shop-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 2.5rem;
-}
-
-/* Product Card */
-.shop-card {
-  background: #f7f5f2;
-  border-radius: 1.25rem;
-  border: 1px solid black;
-  padding: 1.5rem;
-  width: 280px;
-  text-align: left;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.5);
-}
-
-/* Image */
-.shea-img {
-  border-radius: 1rem;
-  margin-bottom: 1rem;
-  border: 2px solid black;
-}
-
-.shea-img img {
-  width: 100%;
-  display: block;
-  border-radius: 0.75rem;
-}
-
-/* Text */
-.shop-card h2 {
-  font-size: 1rem;
-  margin-bottom: 0.5rem;
-  font-weight: 700;
-}
-
-.shop-card p a {
-  font-size: 0.8rem;
-  font-style: italic;
-  text-decoration: underline;
-  color: #000;
-}
-
-.shop-card h2 {
-  margin: 0.75rem 0 1rem;
-  font-weight: 700;
-  font-family: "Anton", sans-serif;
-
-}
-
-/* Button */
-.btn-2 {
-  display: inline-block;
-  background: #fff196;
-  border: 2px solid black;
-  color: #000;
-  padding: 0.5rem 1rem;
-  border-radius: 0.4rem;
-  font-size: 0.75rem;
-  text-decoration: none;
-  font-family: "Anton", sans-serif;
-  letter-spacing: 1px;
-}
-
-/* =========================
-   DESCRIPTION
-========================= */
-
-.product-description {
-  max-width: 600px;
-  line-height: 1.7rem;
+.faq-title {
   text-align: center;
+  font-family: "Anton", sans-serif;
+  letter-spacing: 3px;
+  margin-bottom: 3rem;
+  color: #1a1a1a;
 }
 
+/* FAQ Item */
+.faq-item {
+  border-top: 1px solid #1a1a1a;
+}
 
+.faq-item:last-child {
+  border-bottom: 1px solid #1a1a1a;
+}
 
-/* =====================================
-===============FOOTER============= */
+/* Question Button */
+.faq-question {
+  width: 100%;
+  background: transparent;
+  border: none;
+  padding: 1.25rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  color: #1a1a1a;
+}
 
-.footer-content {
+/* Plus Icon */
+.faq-icon {
+  font-size: 1.5rem;
+  color: #c9a227; /* gold */
+  transition: transform 1s ease;
+}
+
+/* Answer */
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 1s ease;
+}
+
+.faq-answer p {
+  padding: 0 0 1.25rem 0;
+  line-height: 1.8rem;
+  color: #2e2624; /* dark brown */
+}
+
+/* Active State */
+.faq-item.active .faq-answer {
+  max-height: 300px;
+}
+
+.faq-item.active .faq-icon {
+  transform: rotate(45deg);
+}
+
+/* Optional Image */
+.faq-image {
+  margin-top: 4rem;
   display: flex;
   justify-content: center;
-  padding-top: 3rem;
-  padding-bottom: 3rem;
 }
 
-.quick-links-box ul {
-  margin: 0;
+.faq-image img {
+  max-width: 350px;
+  border-radius: 12px;
 }
 
-.quick-links-box ul li {
-  list-style: none;
-  line-height: 1.6rem;
-}
-
-.copyright {
-  display: flex;
-  justify-content: center;
-}
 
 
 
@@ -1142,7 +1071,7 @@ h1 {
 
 footer {
   /* border: 2px solid red; */
-  background-color: #fff8e6;
+  background-color: #f6f1e7;
 }
 
 .footer-content {
@@ -1179,8 +1108,4 @@ footer {
   display: flex;
   justify-content: center;
   padding: 2rem 0rem 2rem 0rem;
-}
-
-hr {
-  color: black;
 }

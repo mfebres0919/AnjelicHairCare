@@ -63,7 +63,7 @@ h1 {
 
 .preloader-name span {
   display: block;
-  font-family: "Times New Roman", serif;
+  font-family: "Anton", sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   font-size: 1.8rem;
@@ -128,10 +128,8 @@ h1 {
 /* ========= MOBILE FONT SIZE ========= */
 @media (max-width: 767px) {
   .preloader-name span {
-    font-size: 1.4rem;
-  }
-  .preloader-name .accent {
-    font-size: 1.7rem;
+    font-size: 4.5rem;
+    line-height: 5rem;
   }
 }
 
@@ -950,8 +948,38 @@ h1 {
 .cta-content h1 {
   font-family: "Anton", sans-serif;
   font-weight: 400;
+  font-size: 2.5rem;
   font-style: normal;
 }
+
+.cta-content h4 {
+  font-size: 1.5rem;
+  padding-top: 1.5rem;
+}
+
+/* SHOP NOW arrow */
+.font-2 {
+  position: relative;
+  margin-left: 3rem;
+  display: inline-block; /* keeps text centered */
+}
+
+/* Arrow as visual element (does NOT affect layout) */
+.font-2::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 2.8rem; /* controls distance from text */
+  transform: translateY(-50%);
+  width: 2.2rem;
+  height: 2.2rem;
+
+  background: url("../images/arrow.svg") no-repeat center;
+  background-size: contain;
+
+  pointer-events: none;
+}
+
 
 
 /* =====================================
@@ -1083,6 +1111,7 @@ h1 {
 .testimonials-section {
   background: #ffffff;
   color: #000000;
+  margin-top: 3rem;
   overflow: hidden;
 }
 
@@ -1247,6 +1276,7 @@ h1 {
 
 .btn-3 a {
   text-decoration: none;
+  font-family: "Anton", sans-serif;
   list-style: none;
   color: rgb(0, 0, 0);
 
@@ -1284,6 +1314,13 @@ footer {
   font-family: Poppins, sans-serif;
 
 }
+
+.quick-links-box ul li a {
+  text-decoration: none;
+  color: #1a1a1a;
+  transition: color 0.3s;
+}
+
 
 .copyright {
   display: flex;

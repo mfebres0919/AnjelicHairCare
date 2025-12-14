@@ -64,7 +64,7 @@ h1 {
 
 .preloader-name span {
   display: block;
-  font-family: "Times New Roman", serif;
+  font-family: "Anton", sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   font-size: 1.8rem;
@@ -129,10 +129,8 @@ h1 {
 /* ========= MOBILE FONT SIZE ========= */
 @media (max-width: 767px) {
   .preloader-name span {
-    font-size: 1.4rem;
-  }
-  .preloader-name .accent {
-    font-size: 1.7rem;
+    font-size: 4.5rem;
+    line-height: 5rem;
   }
 }
 
@@ -1081,6 +1079,7 @@ h1 {
 
 .btn-3 a {
   text-decoration: none;
+  font-family: "Anton", sans-serif;
   list-style: none;
   color: rgb(0, 0, 0);
 
@@ -1117,6 +1116,14 @@ footer {
   font-family: Poppins, sans-serif;
 
 }
+
+.quick-links-box ul li a {
+  text-decoration: none;
+  color: #1a1a1a;
+  transition: color 0.3s;
+}
+
+
 
 .copyright {
   display: flex;
