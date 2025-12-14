@@ -97,7 +97,7 @@ h1 {
   position: absolute;
   inset: 0;
   width: 0%;
-  background: linear-gradient(to bottom, #f2f251, #ffea00);
+  background: linear-gradient(to bottom, #cdb909, #cdb909);
   
   animation: fillBar 1.5s forwards;
   animation-delay: calc(var(--i) * 0.2s);
@@ -863,7 +863,7 @@ h1 {
     padding: 2rem 1rem;
     padding-top: 4rem;
 
-    height: 70vh;
+    height: 50vh;
     max-width: 800px;
     margin: 0 auto;
     line-height: 2rem;
@@ -972,6 +972,8 @@ h1 {
 
 .about-titles h1 {
   font-size: 3rem;
+  line-height: 4rem;
+  padding-bottom: 2rem;
 }
 
 
@@ -995,6 +997,16 @@ h1 {
     padding-bottom: 2rem;
 }
 
+.about-2-titles h1 {
+  font-size: 2.5rem;
+  line-height: 4rem;
+  padding: 2rem 0rem 2rem 0rem;
+}
+
+.span-bold {
+    font-weight: bold;
+    font-style: italic;
+}
 
 /* =====================================
 ===============MISSION SECTION============= */
@@ -1047,6 +1059,11 @@ h1 {
   flex-direction: column;
   justify-content: center;
   text-align: center;
+}
+
+.cta-2-content h1 {
+  font-size: 2.5rem;
+  line-height: 3.6rem;
 }
 
 .cta-2-header {

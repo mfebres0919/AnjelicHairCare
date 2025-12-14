@@ -96,8 +96,7 @@ h1 {
   position: absolute;
   inset: 0;
   width: 0%;
-  background: linear-gradient(to bottom, #f2f251, #ffea00);
-  
+  background: linear-gradient(to bottom, #cdb909, #cdb909);
   animation: fillBar 1.5s forwards;
   animation-delay: calc(var(--i) * 0.2s);
 }

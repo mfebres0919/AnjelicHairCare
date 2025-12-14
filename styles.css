@@ -96,7 +96,7 @@ h1 {
   position: absolute;
   inset: 0;
   width: 0%;
-  background: linear-gradient(to bottom, #f2f251, #ffea00);
+  background: linear-gradient(to bottom, #cdb909, #cdb909);
   
   animation: fillBar 1.5s forwards;
   animation-delay: calc(var(--i) * 0.2s);
@@ -898,16 +898,15 @@ h1 {
   font-family: "Anton", sans-serif;
   font-weight: 400;
   font-style: normal;
-  line-height: 3rem;
+  line-height: 4rem;
   margin: 0;
   font-size: 3rem;
-  color: #f9f9f9; /* glowing yellow text */
+  color: #ffe8a3; /* soft gold text */
 
-  /* GLOW EFFECT */
-  text-shadow: 
-    0 0 8px rgba(250, 250, 250, 0.8),   /* soft glow */
-    0 0 20px rgba(255, 255, 255, 0.6),  /* bigger outer glow */
-    0 0 35px rgba(255, 255, 255, 0.4);  /* extra depth */
+  text-shadow:
+    0 0 6px rgba(255, 230, 172, 0.733),
+    0 0 14px rgba(243, 201, 105, 0.45),
+    0 0 28px rgba(168, 120, 24, 0.35);
 }
 
 .hero-content p {
@@ -1008,7 +1007,7 @@ h1 {
     content: "";
     position: absolute;
     inset: 0;
-    background: rgba(0,0,0,0.5); /* adjust opacity */
+    background: rgba(0,0,0,0.6); /* adjust opacity */
     z-index: 0; /* behind the text */
 }
 
@@ -1031,6 +1030,8 @@ h1 {
 
 .card-1-content h1 {
   padding-bottom: 1rem;
+  font-size: 3rem;
+  line-height: 3.8rem;
 }
 
 
@@ -1085,7 +1086,12 @@ h1 {
   margin-bottom: 2rem;
 }
 
-
+.why-us-titles h1 {
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+  line-height: 3.5rem;
+  padding-bottom: 2rem;
+}
 
 .why-us-img {
   display: flex;
@@ -1099,7 +1105,7 @@ h1 {
 
 .reason-1 h1 {
   color:#8b6500;
-}
+  font-family: "DM Serif Display", serif;}
 
 .reason-1 p {
   padding-left: 1rem;
@@ -1117,7 +1123,8 @@ h1 {
 
 .testimonials-header h1 {
   text-align: center;
-  font-size: 2rem;
+  font-size: 3.2rem;
+  line-height: 4rem;
   margin-bottom: 2rem;
 }
 
@@ -1244,6 +1251,11 @@ h1 {
   flex-direction: column;
   justify-content: center;
   text-align: center;
+}
+
+.cta-2-content h1 {
+  font-size: 2.5rem;
+  line-height: 3.6rem;
 }
 
 .cta-2-header {

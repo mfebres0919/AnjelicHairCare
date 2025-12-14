@@ -96,7 +96,7 @@ h1 {
   position: absolute;
   inset: 0;
   width: 0%;
-  background: linear-gradient(to bottom, #f2f251, #ffea00);
+  background: linear-gradient(to bottom, #cdb909, #cdb909);
   
   animation: fillBar 1.5s forwards;
   animation-delay: calc(var(--i) * 0.2s);
@@ -859,7 +859,7 @@ h1 {
     padding: 2rem 1rem;
     padding-top: 4rem;
 
-    height: 80vh;
+    height: 60vh;
     max-width: 800px;
     margin: 0 auto;
     line-height: 2rem;
@@ -1012,8 +1012,14 @@ h1 {
 }
 
 /* Text */
+
+.shop-card h1 {
+    font-size: 1.5rem;
+}
+
+
 .shop-card h2 {
-  font-size: 1rem;
+  font-size: 1.2rem;
   margin-bottom: 0.5rem;
   font-weight: 700;
 }
@@ -1099,6 +1105,12 @@ h1 {
   justify-content: center;
   text-align: center;
 }
+
+.cta-2-content h1 {
+  font-size: 2.5rem;
+  line-height: 3.6rem;
+}
+
 
 .cta-2-header {
   background-color:#2e2624;
