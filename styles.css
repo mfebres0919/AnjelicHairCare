@@ -5,9 +5,8 @@ body {
 }
 
 p {
-  line-height: 2rem;
   margin: 0;
-  font-family: poppins, sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: normal;
 }
 
@@ -848,11 +847,12 @@ h1 {
 
 .hero-section {
     position: relative;
-    background-image: url(images/background/home-hero-bg\ \(1\).png);
+    background-image: url(images/background/home-hero-phone.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     color: white;
+    border: 5px solid red;
 
     display: flex;
     flex-direction: column;
@@ -862,8 +862,8 @@ h1 {
     padding: 2rem 1rem;
     padding-top: 4rem;
 
-    height: 100vh;
-    max-width: 800px;
+    height: 80vh;
+    /* max-width: 800px; */
     margin: 0 auto;
     line-height: 2rem;
     z-index: 1;
@@ -874,7 +874,7 @@ h1 {
     content: "";
     position: absolute;
     inset: 0; /* covers entire hero */
-    background: rgba(0, 0, 0, 0.65); /* adjust opacity */
+    background: rgba(0, 0, 0, 0.75); /* adjust opacity */
     z-index: 0; /* behind text */
 }
 
@@ -900,13 +900,12 @@ h1 {
   font-style: normal;
   line-height: 4rem;
   margin: 0;
-  font-size: 3rem;
-  color: #ffe8a3; /* soft gold text */
+  color: #fff263; /* soft gold text */
 
   text-shadow:
-    0 0 6px rgba(255, 230, 172, 0.733),
-    0 0 14px rgba(243, 201, 105, 0.45),
-    0 0 28px rgba(168, 120, 24, 0.35);
+    0 0 6px rgba(252, 238, 112, 0.47),
+    0 0 14px rgba(255, 239, 122, 0.819),
+    0 0 28px rgba(168, 120, 24, 0.95);
 }
 
 .hero-content p {
@@ -924,6 +923,91 @@ h1 {
   background: rgb(0, 0, 0);
   padding: 15px;
   color: rgb(255, 255, 255);
+}
+
+
+/* MEDIA QUERIES SECTION */
+
+@media (min-width: 768px) {
+  
+  .hero-section {
+    height: 100vh;
+    background-image: url(images/background/home-hero-tablet.png);
+
+  }
+  
+  .hero-container {
+    margin-top: 20rem;
+  }
+
+  .hero-content h1 {
+    font-size: 4rem;
+    line-height: 5rem;
+    padding: 0rem 2rem 0rem 2rem;
+  }
+
+  .hero-content p {
+    font-size: 1.2rem;
+    line-height: 3rem;
+    margin: 0rem 2rem 0rem 2rem;
+  }
+
+  .btn-1 {
+    font-size: 1.6rem;
+    padding: 1.2rem 2rem 1.2rem 2rem;
+    display: block;        /* ← makes width apply */
+    margin: 0 auto;
+    width: auto;
+  }
+ 
+
+}
+
+@media (min-width: 1024px) {
+  
+  .hero-section {
+    height: 150vh;
+    background-image: url(images/background/home-hero-desktop.png);
+  }
+
+   .btn-1 {
+    margin-top: 4rem;
+  }
+
+  .hero-container {
+    max-width: 950px;
+    margin: 0 auto;
+    margin-top: 20rem;
+  }
+ 
+}
+
+@media (min-width: 1200px) {
+
+/* =======HERO SECTION ======= */
+
+   .hero-section {
+    height: 100vh;
+    background-image: url(images/background/home-hero-desktop-2.png);
+  }
+  
+
+}
+
+@media (min-width: 1500px) {
+
+/* =======HERO SECTION ======= */
+
+   .hero-section {
+    height: 100vh;
+    background-image: url(images/background/home-hero-desktop-3.png);
+  }
+
+
+  .hero-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
 }
 
 
@@ -947,7 +1031,6 @@ h1 {
 .cta-content h1 {
   font-family: "Anton", sans-serif;
   font-weight: 400;
-  font-size: 2.5rem;
   font-style: normal;
 }
 
@@ -978,6 +1061,69 @@ h1 {
 
   pointer-events: none;
 }
+
+
+/* MEDIA QUERIES SECTION */
+
+@media (min-width: 768px) {
+      .cta-content h1 {
+    font-size: 3.5rem;
+    padding-top: 3rem;
+    }
+
+    .cta-content h4 {
+    font-size: 2rem;
+    padding-top: 2rem;
+
+}
+
+}
+
+@media (min-width: 1024px) {
+  
+    .cta-content h1 {
+    font-size: 3.5rem;
+    padding-top: 3rem;
+    }
+
+    .cta-content h4 {
+    font-size: 2rem;
+    padding-top: 2rem;
+
+}
+ 
+}
+
+@media (min-width: 1200px) {
+    .cta-content h1 {
+    font-size: 3.5rem;
+    padding-top: 3rem;
+    }
+
+    .cta-content h4 {
+    font-size: 2rem;
+    padding-top: 2rem;
+
+}
+
+
+}
+
+@media (min-width: 1500px) {
+
+    .cta-content h1 {
+    font-size: 3.5rem;
+    padding-top: 3rem;
+    }
+
+    .cta-content h4 {
+    font-size: 2rem;
+    padding-top: 2rem;
+
+}
+}
+
+
 
 
 
@@ -1030,7 +1176,6 @@ h1 {
 
 .card-1-content h1 {
   padding-bottom: 1rem;
-  font-size: 3rem;
   line-height: 3.8rem;
 }
 
@@ -1046,6 +1191,48 @@ h1 {
   border-radius: 5px;
   color: white;
 }
+
+
+/* MEDIA QUERIES SECTION */
+
+@media (min-width: 768px) {
+  .card-1-content h1 {
+    font-size: 3rem;
+    padding-right: 5rem;
+  }
+
+  .card-1-content p {
+    font-size: 1.2rem;
+    line-height: 3rem;
+  }
+  .btn-2 {
+    font-size: 1.2rem;
+    padding: 1.2rem 2rem 1.2rem 2rem;
+    width: auto;
+  }
+
+}
+
+
+
+@media (min-width: 1024px) {
+  
+
+ 
+}
+
+@media (min-width: 1200px) {
+
+
+
+}
+
+@media (min-width: 1500px) {
+
+
+}
+
+
 
 
 /* =====================================
@@ -1087,7 +1274,6 @@ h1 {
 }
 
 .why-us-titles h1 {
-  font-size: 2.5rem;
   letter-spacing: 2px;
   line-height: 3.5rem;
   padding-bottom: 2rem;
@@ -1123,7 +1309,6 @@ h1 {
 
 .testimonials-header h1 {
   text-align: center;
-  font-size: 3.2rem;
   line-height: 4rem;
   margin-bottom: 2rem;
 }
@@ -1254,7 +1439,6 @@ h1 {
 }
 
 .cta-2-content h1 {
-  font-size: 2.5rem;
   line-height: 3.6rem;
 }
 
@@ -1339,3 +1523,37 @@ footer {
   justify-content: center;
   padding: 2rem 0rem 2rem 0rem;
 }
+
+
+
+
+/* CLAMPS FOR TYPOGRAPHY */
+/* 
+p {
+  font-size: clamp(0.95rem, 2.5vw, 1.1rem);
+  line-height: 2rem;
+}
+
+h1 {
+  font-size: clamp(2rem, 6vw, 5rem);
+}
+
+h2 {
+  font-size: clamp(1.75rem, 5vw, 3rem);
+}
+
+h3 {
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
+}
+
+h4 {
+  font-size: clamp(1.25rem, 3vw, 2rem);
+}
+
+h5 {
+  font-size: clamp(1.1rem, 2.5vw, 1.6rem);
+}
+
+h6 {
+  font-size: clamp(1rem, 2vw, 1.3rem);
+} */
