@@ -1487,89 +1487,120 @@ h1 {
 
 /* =====================================
 ===============CAROUSEL #2============= */
+.carousel-container {
+  width: 100%;
+  height: 5.5rem;              /* 🔑 lock height */
+  overflow: hidden;
+  position: relative;
 
-
-.carousel-container2 {
-  width: 100%; /* Adjust as needed */
-  overflow: hidden; /* Hides content outside the container */
-  white-space: nowrap; /* Prevents text from wrapping */
+  transform: translateZ(0); /* Safari GPU lock */
 }
 
-.carousel-track2 {
-  display: inline-block; /* Allows items to sit side-by-side */
-  animation: slide 30s linear infinite; /* Adjust duration and timing */
-  background-color: rgb(255, 255, 255);
-  border: 1px solid black;
-  padding: 1.5rem;
+.carousel-track {
+  display: flex;
+  align-items: center;
+  width: max-content;       /* 🔑 prevents width snapping */
 
+  background-color: black;
+  padding: 2rem 0;
+
+  animation: slide 10s linear infinite;
+
+  will-change: transform;
+  transform: translateZ(0);
 }
 
-.carousel-item2 {
-  display: inline-block; /* Aligns text items horizontally */
-  padding: 0 20px; /* Spacing between text items */
-  font-size: 1.2em;
-  color: rgb(0, 0, 0);
+/* FORCE CONSISTENT FLOW */
+.carousel-track > * {
+  flex-shrink: 0;            /* 🔑 prevents collapsing */
+  display: flex;
+  align-items: center;
 }
+
+/* Text items */
+.carousel-item {
+  padding: 0 20px;
+  color: white;
+
+  font-family: "Anton", sans-serif;
+  font-weight: 100;
+  letter-spacing: 2px;
+
+  margin: 0;                 /* remove <p> defaults */
+}
+
+/* Icon spacing */
+.carousel-track img {
+  margin-right: 20px;
+}
+
 
 .carousel-item2 p {
     font-family: "Anton", sans-serif !important;
 }
 
-
+/* SAFER animation (no percentages tied to element width) */
 @keyframes slide {
-  0% {
+  from {
     transform: translateX(0);
   }
-  100% {
-    transform: translateX(-50%); /* Moves the track to the left by 50% of its width */
+  to {
+    transform: translateX(-100vw);
   }
 }
+
+
 
 
 /* =====================================
-===============CAROUSEL #3============= */
-
+===============CAROUSEL #3 (FIXED)============= */
 
 .carousel-container3 {
-  width: 100%; /* Adjust as needed */
-  overflow: hidden; /* Hides content outside the container */
-  white-space: nowrap; /* Prevents text from wrapping */
+  width: 100%;
+  height: 220px;              /* 🔑 lock height so Safari doesn’t jump */
+  overflow: hidden;
+  position: relative;
+
+  transform: translateZ(0);  /* GPU lock for iOS */
 }
 
 .carousel-track3 {
-  display: inline-block; /* Allows items to sit side-by-side */
-  animation: slide 25s linear infinite; /* Adjust duration and timing */
-  background-color: rgb(255, 255, 255);
-  border: 1px solid black;
-  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  width: max-content;        /* 🔑 prevents width snapping */
 
+  background-color: #ffffff;
+  padding: 1.5rem 0;
+
+  animation: slide3 10s linear infinite;
+
+  will-change: transform;
+  transform: translateZ(0);
 }
 
+/* FORCE ALL CHILDREN TO BE CONSISTENT */
+.carousel-track3 > * {
+  flex-shrink: 0;             /* 🔑 prevents collapsing */
+  display: flex;
+  align-items: center;
+}
 
+/* Image spacing */
 .carousel-img {
-  padding-left: 5rem;
+  height: 150px;
+  margin-right: 5rem;        /* replaces padding-left */
 }
 
-.carousel-item3 {
-  display: inline-block; /* Aligns text items horizontally */
-  padding: 0 20px; /* Spacing between text items */
-  font-size: 1.2em;
-  color: rgb(0, 0, 0);
-}
-
-.carousel-item3 p {
-    font-family: "Anton", sans-serif !important;
-}
-
-
-@keyframes slide {
-  0% {
+/* SAFER ANIMATION (viewport-based, not % width) */
+@keyframes slide3 {
+  from {
     transform: translateX(0);
   }
-  100% {
-    transform: translateX(-50%); /* Moves the track to the left by 50% of its width */
+  to {
+    transform: translateX(-100vw);
   }
 }
+
 
 
 
