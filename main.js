@@ -1,28 +1,37 @@
-window.addEventListener('load', function () {
-  const preloader = document.getElementById('preloader');
 
-  // ENTER duration
+// Preloader functionality
+document.addEventListener('DOMContentLoaded', function () {
+  const preloader = document.getElementById('preloader');
+  if (!preloader) return;
+
   const enterDuration = 1500 + (7 * 150);
 
   setTimeout(() => {
-    // EXIT animation (right → left)
     preloader.classList.add('exit');
 
-    // EXIT duration
     const exitDuration = 1000 + (7 * 120);
 
     setTimeout(() => {
       preloader.classList.add('done');
 
-      // Remove preloader from DOM
       setTimeout(() => {
-        preloader.remove();
+        if (preloader.parentNode) {
+          preloader.remove();
+        }
       }, 500);
 
     }, exitDuration);
 
   }, enterDuration);
 });
+
+/* HARD FAILSAFE — never remove this */
+setTimeout(() => {
+  const preloader = document.getElementById('preloader');
+  if (preloader) {
+    preloader.remove();
+  }
+}, 5000);
 
 
 
