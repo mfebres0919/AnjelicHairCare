@@ -1589,7 +1589,7 @@ h1 {
     content: "";
     position: absolute;
     inset: 0; /* covers entire hero */
-    background: rgba(0, 0, 0, 0.75); /* adjust opacity */
+    background: rgba(0, 0, 0, 0.65); /* adjust opacity */
     z-index: 0; /* behind text */
 }
 
@@ -1605,7 +1605,7 @@ h1 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 20rem;
+  margin-top: 15rem;
   /* border: 2px solid red; */
 }
 
@@ -1752,9 +1752,7 @@ h1 {
   font-style: normal;
 }
 
-.cta-content h4 {
-  padding-top: 1.5rem;
-}
+
 
 /* SHOP NOW arrow */
 .font-2 {
@@ -2337,7 +2335,7 @@ a,li {
 
 h1 {
   font-size: clamp(3rem, 6vw, 5rem);
-  line-height: 6rem;
+  line-height: 4.5rem;
 
 } 
 h2 {
