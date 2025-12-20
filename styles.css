@@ -1967,7 +1967,6 @@ h1 {
 .why-us-section {
   display: flex;
   flex-direction: column;
-  padding: 2rem;
 }
 
 .why-us-content {
@@ -1977,7 +1976,7 @@ h1 {
 }
 
 .why-us-titles {
-  padding: 3rem 0rem 3rem 0rem;
+  padding: 3rem;
 }
 
 .why-us-titles h1 {
