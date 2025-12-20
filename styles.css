@@ -41,7 +41,7 @@ h1 {
   width: 100%;
   height: 100vh;
   background: #000000;
-  z-index: 9999;
+  z-index: 99999; /* higher than nav */
   overflow: hidden;
 
   display: flex;
@@ -56,7 +56,7 @@ h1 {
 .preloader-name {
   position: absolute;
   text-align: center;
-  z-index: index 10;;
+  z-index: index 10;
 }
 
 .preloader-name span {
@@ -129,7 +129,6 @@ h1 {
     font-size: 4.5rem;
   }
 }
-
 
 
 /*-- -------------------------- -->
@@ -2121,7 +2120,7 @@ h1 {
 
 .testimonial-card {
   min-width: 260px;
-  max-width: 500px; /* keeps widths identical for seamless looping */
+  max-width: 300px; /* keeps widths identical for seamless looping */
   background:  #ffffff;
   border-radius: 1.25rem;
   padding: 2rem;
@@ -2174,7 +2173,7 @@ h1 {
 @media (max-width: 768px) {
   .testimonial-card {
     min-width: 240px;
-    max-width: 350px;
+    max-width: 300px;
     padding-top: 2.2rem;
   }
 }
@@ -2330,7 +2329,7 @@ footer {
 /* CLAMPS FOR TYPOGRAPHY */
 
 p {
-  font-size: clamp(.8rem, 2.5vw, 1.1rem);
+  font-size: clamp(1rem, 2.5vw, 1.5rem);
   line-height: 2.2rem;
 }
 
